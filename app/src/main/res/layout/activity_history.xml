@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#0d0d0d"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Imagen centrada -->
+    <ImageView
+        android:id="@+id/imageHistorial"
+        android:src="@drawable/ic_historial"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Título -->
+    <TextView
+        android:text="Historial de Partidas"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- Spinner estilizado -->
+    <Spinner
+        android:id="@+id/spinnerOrdenar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#5865F2"
+        android:popupBackground="#1e1e1e"
+        android:theme="@style/SpinnerTheme"
+    android:layout_marginBottom="24dp" />
+
+    <!-- ListView estilizado -->
+    <ListView
+        android:id="@+id/listaHistorial"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="#333"
+        android:dividerHeight="1dp"
+        android:cacheColorHint="#00000000" />
+
+    <!-- Botón -->
+    <Button
+        android:id="@+id/btnBorrarHistorial"
+        android:text="Borrar todo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#ED4245"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="16dp" />
+</LinearLayout>

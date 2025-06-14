@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0d0d0d"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingTop="48dp"
+        android:paddingBottom="48dp">
+
+        <ImageView
+            android:id="@+id/imgConfiguracion"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginBottom="24dp"
+            android:src="@drawable/configuracion"
+            android:contentDescription="Imagen configuracion" />
+
+        <TextView
+            android:text="Configuración de la partida"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="32dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Número de países -->
+        <TextView
+            android:text="Número de países:"
+            android:textColor="#CCCCCC"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:id="@+id/spinnerCantidad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="#5865F2"
+            android:popupBackground="#1e1e1e"
+            android:theme="@style/SpinnerDarkTheme" />
+
+        <!-- Número de intentos -->
+        <TextView
+            android:text="Intentos por pregunta:"
+            android:textColor="#CCCCCC"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:id="@+id/spinnerIntentos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="#5865F2"
+            android:popupBackground="#1e1e1e"
+            android:theme="@style/SpinnerDarkTheme" />
+
+        <!-- Modo de juego -->
+        <TextView
+            android:text="Modo de juego:"
+            android:textColor="#CCCCCC"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupModo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp">
+
+            <RadioButton
+                android:id="@+id/radioPaisCapital"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dado el país, adivina la capital"
+                android:checked="true"
+                android:textColor="#FFFFFF"
+                android:buttonTint="#5865F2"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/radioCapitalPais"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dada la capital, adivina el país"
+                android:textColor="#FFFFFF"
+                android:buttonTint="#5865F2"
+                android:textSize="14sp" />
+        </RadioGroup>
+
+        <!-- Botón iniciar -->
+        <Button
+            android:id="@+id/btnIniciar"
+            android:text="📈 Iniciar Juego"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#5865F2"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:padding="12dp"
+            android:elevation="4dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp" />
+    </LinearLayout>
+</ScrollView>

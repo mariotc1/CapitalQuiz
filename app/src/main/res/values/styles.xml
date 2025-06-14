@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SpinnerDarkTheme" parent="Theme.AppCompat.Light">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="SpinnerTheme" parent="Theme.AppCompat.Light">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+</resources>
